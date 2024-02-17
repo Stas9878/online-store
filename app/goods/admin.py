@@ -4,9 +4,14 @@ from .models import Categories, Products
 
 @admin.register(Categories)
 class CategoriesAdmin(admin.ModelAdmin):
-    pass
+    prepopulated_fields = {
+        'slug': ['name']
+    }
 
 @admin.register(Products)
 class ProductsAdmin(admin.ModelAdmin):
-    pass
+    prepopulated_fields = {
+        'slug': ['name']
+    }
+
 
