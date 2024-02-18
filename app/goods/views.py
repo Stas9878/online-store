@@ -1,7 +1,10 @@
 from django.shortcuts import render
-from templates.other_files.goods_list import goods
+# from templates.other_files.goods_list import goods
+from .models import Products,Categories
+
 
 def catalog(request):
+    goods = Products.objects.all()
     context = {
         'goods': goods
     }
@@ -10,7 +13,7 @@ def catalog(request):
     #     Products.objects.create(name=i['name'],
     #                             description=i['description'],
     #                             price=i['price'],
-    #                             image=i['image'],
+    #                             image=i['image'].split('/')[-1],
     #                             category=Categories.objects.get(id=1))
 
     return render(request, 'goods/catalog.html', context=context)
