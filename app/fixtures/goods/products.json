@@ -1,26 +1,26 @@
 [
   {
     "model": "goods.products",
-    "pk": 3,
+    "pk": 25,
     "fields": {
       "name": "Чайный столик и три стула",
-      "slug": null,
+      "slug": "chajnyj-stolik-i-tri-stula",
       "description": "Комплект из трёх стульев и дизайнерский столик для гостинной комнаты.",
-      "image": "deps/images/goods/set of tea table and three chairs.jpg",
+      "image": "goods_images/set_of_tea_table_and_three_chairs.jpg",
       "price": 150,
-      "discount": 0,
+      "discount": 10,
       "quantity": 0,
       "category": 1
     }
   },
   {
     "model": "goods.products",
-    "pk": 4,
+    "pk": 26,
     "fields": {
       "name": "Чайный столик и два стула",
-      "slug": null,
+      "slug": "chajnyj-stolik-i-dva-stula",
       "description": "Набор из стола и двух стульев в минималистическом стиле.",
-      "image": "deps/images/goods/set of tea table and two chairs.jpg",
+      "image": "goods_images/set_of_tea_table_and_two_chairs.jpg",
       "price": 93,
       "discount": 0,
       "quantity": 0,
@@ -29,12 +29,12 @@
   },
   {
     "model": "goods.products",
-    "pk": 5,
+    "pk": 27,
     "fields": {
       "name": "Двухспальная кровать",
-      "slug": null,
+      "slug": "dvuhspalnaya-krovat",
       "description": "Кровать двухспальная с надголовником и вообще очень ортопедичная.",
-      "image": "deps/images/goods/double bed.jpg",
+      "image": "goods_images/double_bed.jpg",
       "price": 670,
       "discount": 0,
       "quantity": 0,
@@ -43,12 +43,12 @@
   },
   {
     "model": "goods.products",
-    "pk": 6,
+    "pk": 28,
     "fields": {
       "name": "Кухонный стол с раковиной",
-      "slug": null,
+      "slug": "kuhonnyj-stol-s-rakovinoj",
       "description": "Кухонный стол для обеда с встроенной раковиной и стульями.",
-      "image": "deps/images/goods/kitchen table.jpg",
+      "image": "goods_images/kitchen_table.jpg",
       "price": 365,
       "discount": 0,
       "quantity": 0,
@@ -57,12 +57,12 @@
   },
   {
     "model": "goods.products",
-    "pk": 7,
+    "pk": 29,
     "fields": {
       "name": "Кухонный стол с встройкой",
-      "slug": null,
+      "slug": "kuhonnyj-stol-s-vstrojkoj",
       "description": "Кухонный стол со встроенной плитой и раковиной. Много полок и вообще красивый.",
-      "image": "deps/images/goods/kitchen table 2.jpg",
+      "image": "goods_images/kitchen_table_2.jpg",
       "price": 430,
       "discount": 0,
       "quantity": 0,
@@ -71,26 +71,26 @@
   },
   {
     "model": "goods.products",
-    "pk": 8,
+    "pk": 30,
     "fields": {
       "name": "Угловой диван для гостинной",
-      "slug": null,
+      "slug": "uglovoj-divan-dlya-gostinnoj",
       "description": "Угловой диван, раскладывается в двухспальную кровать, для гостинной и приема гостей самое то!",
-      "image": "deps/images/goods/corner sofa.jpg",
+      "image": "goods_images/corner_sofa.jpg",
       "price": 610,
-      "discount": 0,
-      "quantity": 0,
+      "discount": 30,
+      "quantity": 33,
       "category": 3
     }
   },
   {
     "model": "goods.products",
-    "pk": 9,
+    "pk": 31,
     "fields": {
       "name": "Прикроватный столик",
-      "slug": null,
+      "slug": "prikrovatnyj-stolik",
       "description": "Прикроватный столик с двумя выдвижными ящиками (цветок не входит в комплект).",
-      "image": "deps/images/goods/bedside table.jpg",
+      "image": "goods_images/bedside_table.jpg",
       "price": 55,
       "discount": 0,
       "quantity": 0,
@@ -99,26 +99,26 @@
   },
   {
     "model": "goods.products",
-    "pk": 10,
+    "pk": 32,
     "fields": {
       "name": "Диван обыкновенный",
-      "slug": null,
+      "slug": "divan-obyknovennyj",
       "description": "Диван, он же софа обыкновенная, ничего примечательного для описания.",
-      "image": "deps/images/goods/sofa.jpg",
+      "image": "goods_images/sofa.jpg",
       "price": 190,
       "discount": 0,
-      "quantity": 0,
+      "quantity": 25,
       "category": 3
     }
   },
   {
     "model": "goods.products",
-    "pk": 11,
+    "pk": 33,
     "fields": {
       "name": "Стул офисный",
-      "slug": null,
+      "slug": "stul-ofisnyj",
       "description": "Описание товара, про то какой он классный, но это стул, что тут сказать...",
-      "image": "deps/images/goods/office chair.jpg",
+      "image": "goods_images/office_chair.jpg",
       "price": 30,
       "discount": 0,
       "quantity": 0,
@@ -127,12 +127,12 @@
   },
   {
     "model": "goods.products",
-    "pk": 12,
+    "pk": 34,
     "fields": {
       "name": "Растение",
-      "slug": null,
+      "slug": "rastenie",
       "description": "Растение для украшения вашего интерьера подарит свежесть и безмятежность обстановке.",
-      "image": "deps/images/goods/plants.jpg",
+      "image": "goods_images/plants.jpg",
       "price": 10,
       "discount": 0,
       "quantity": 0,
@@ -141,14 +141,14 @@
   },
   {
     "model": "goods.products",
-    "pk": 13,
+    "pk": 35,
     "fields": {
       "name": "Цветок стилизированный",
-      "slug": null,
+      "slug": "cvetok-stilizirovannyj",
       "description": "Дизайнерский цветок (возможно искусственный) для украшения интерьера.",
-      "image": "deps/images/goods/flower.jpg",
+      "image": "goods_images/flower.jpg",
       "price": 15,
-      "discount": 0,
+      "discount": 20,
       "quantity": 0,
       "category": 6
     }
