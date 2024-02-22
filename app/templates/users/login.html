@@ -14,17 +14,17 @@
                     <form action="{% url 'users:login' %}" method="post">
                         {% csrf_token %}
                         <div class="mb-3">
-                            <label for="username" class="form-label">Имя пользователя</label>
+                            <label for="id_username" class="form-label">Имя пользователя</label>
                             <input type="text" name="username" 
                                     value="{% if form.username.value %}{{ form.username.value }}{% endif %}" 
-                                    class="form-control" id="username" 
+                                    class="form-control" id="id_username" 
                                     placeholder="Введите ваше имя пользователя" 
                                     required>
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Пароль</label>
+                            <label for="id_password" class="form-label">Пароль</label>
                             <input type="password" name="password" 
-                                    class="form-control" id="password" 
+                                    class="form-control" id="id_password" 
                                     placeholder="Введите ваш пароль" 
                                     required>
                         </div>
