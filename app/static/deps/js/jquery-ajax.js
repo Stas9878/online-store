@@ -52,8 +52,6 @@ $(document).ready(function () {
     });
 
 
-
-
     // Ловим собыитие клика по кнопке удалить товар из корзины
     $(document).on("click", ".remove-from-cart", function (e) {
         // Блокируем его базовое действие
@@ -102,10 +100,7 @@ $(document).ready(function () {
         });
     });
 
-
-
-
-    // Теперь + - количества товара 
+    // + - количества товара 
     // Обработчик события для уменьшения значения
     $(document).on("click", ".decrement", function () {
         // Берем ссылку на контроллер django из атрибута data-cart-change-url
