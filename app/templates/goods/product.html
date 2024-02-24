@@ -3,6 +3,10 @@
 
 {% block title %}O-Lib - Каталог{% endblock %}
 
+{% block modal_cart %}
+    {% include 'includes/cart_button.html' %}
+{% endblock %}
+
 {% block content %}
     <!-- Контент на странице -->
     <div class="container mt-5">
@@ -47,7 +51,11 @@
                 
                 <h5 class="card-title">{{ product.name }}</h5>
                 <p class="card-text">{{ product.description }}</p>
-                <a href="{% url 'carts:cart_add' product.slug %}" class="btn btn-dark add-to-cart">Добавить в корзину</a>
+                <a href="{% url 'carst:cart_add' %}" class="btn btn-dark add-to-cart"
+                    data-product-id="{{ product.id }}">
+                    {% csrf_token %}
+                    Добавить в корзину
+                </a>
             </div>
         </div>
     </div>

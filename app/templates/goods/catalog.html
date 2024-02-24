@@ -98,7 +98,9 @@
                             {% else %}
                                 <p><strong>{{ product.price }} руб.</strong></p>
                             {% endif %}
-                            <a href="{% url 'carts:cart_add' product.slug %}" class="btn">
+                            <a href="{% url 'carts:cart_add' %}" class="btn add-to-cart"
+                                data-product-id="{{ product.id }}">
+                                {% csrf_token %}
                                 <img class="mx-1" src="{% static 'deps/icons/cart-plus.svg' %}" alt="Catalog Icon"
                                     width="32" height="32">
                             </a>
@@ -127,7 +129,6 @@
                             </li>
                         {% endif %}
                     {% endfor %}
-
                     <li class="page-item {% if not goods.has_next %} disabled {% endif %}">
                         <a class="page-link" 
                             href="{% if goods.has_next %}?{% change_params page=goods.next_page_number %}{% else %}#{% endif %}">

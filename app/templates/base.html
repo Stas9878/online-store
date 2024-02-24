@@ -1,6 +1,7 @@
 {% load static %}
 {% load goods_tags %}
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'deps/css/bootstrap/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'deps/css/my_css.css' %}">
+
     <!-- Стиль footer-a для главной страницы -->
     {% block css %}
     {% endblock %}
@@ -124,7 +126,6 @@
     {% block footer %}
     {% endblock %}
     <script src="{% static 'deps/js/jquery/jquery-3.7.0.min.js' %}"></script>
-    <script src="{% static 'deps/js/jquery-events.js' %}"></script>
     <script src="{% static 'deps/js/jquery-ajax.js' %}"></script>
     <script src="{% static 'deps/js/bootstrap/bootstrap.bundle.min.js' %}"></script>
 </body>
