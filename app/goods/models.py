@@ -1,3 +1,4 @@
+from django.shortcuts import reverse
 from django.db import models
 
 class Categories(models.Model):
@@ -30,6 +31,9 @@ class Products(models.Model):
 
     def __str__(self):
         return f'{self.name} | Цена - {self.price} | Количество - {self.quantity} | Категория - {self.category.name}'
+    
+    def get_absolute_url(self):
+        return reverse("catalog:product", kwargs={"slug": self.slug})
     
     def display_id(self):
         return f'{self.id:05}' 
