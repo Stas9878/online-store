@@ -17,7 +17,7 @@ class Cart(models.Model):
     quantity = models.PositiveSmallIntegerField(default=0, verbose_name='Количество')
     created_timestamp = models.DateTimeField(auto_now_add=True, verbose_name='Дата добавления')
 
-    session_key = models.CharField(max_length=32, null=True, verbose_name='Количество')
+    session_key = models.CharField(max_length=32, null=True, verbose_name='Сессионный ключ')
     objects = CartQueryset.as_manager()
 
     class Meta:
@@ -30,4 +30,9 @@ class Cart(models.Model):
         return round(self.product.sell_price() * self.quantity, 2)
 
     def __str__(self):
-        return f'Корзина {self.user.username} | Товар {self.product.name} | Количество {self.quantity}'
+        if not self.user:
+            user = 'Anonimous'
+        else:
+            user = self.user.username
+
+        return f'Корзина {user} | Товар {self.product.name} | Количество {self.quantity} | Сессия {self.session_key}'
